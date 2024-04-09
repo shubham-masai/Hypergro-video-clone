@@ -5,7 +5,7 @@ import Footer from './compoenents/Footer'
 
 const App: React.FC = () => {
   return (
-    <div>
+    <div className='bg-black'>
       <Navbar />
       <AllRoutes />
       <Footer />

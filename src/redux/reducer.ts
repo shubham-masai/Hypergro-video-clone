@@ -12,7 +12,7 @@ const reducer = (state = InitialState, { type, payload }) => {
         case GET_VIDEO_REQUEST:
             return { ...state, isLoading: true }
         case GET_VIDEO_SUCCESS:
-            return { ...state, videos: payload.videos, currentpage: payload.currentpage, isLoading: false, isError: false }
+            return { ...state, videos: payload.videos, currentpage: payload.page, isLoading: false, isError: false }
         case GET_VIDEO_FAILURE:
             return { ...state, isError: true, isLoading: false }
         default: return state
