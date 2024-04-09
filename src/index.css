@@ -2,7 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
- 
+
 .gradient-background {
     background: linear-gradient(120deg, #c0c0c0 30%, #a0a0a0 38%, #a0a0a0 40%, #c0c0c0 48%);
     background-size: 200% 100%;
@@ -14,4 +14,8 @@
     100% {
         background-position: -100% 0;
     }
+}
+
+.sidebar::-webkit-scrollbar {
+    display: none;
 }

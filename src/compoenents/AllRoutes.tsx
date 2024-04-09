@@ -7,7 +7,7 @@ const AllRoutes: React.FC = () => {
     return (
         <Routes>
             <Route path='/' element={<Home />} />
-            <Route path='/video:/id' element={<Videoplayer />} />
+            <Route path='/video/:id' element={<Videoplayer />} />
         </Routes>
     )
 }
