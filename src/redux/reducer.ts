@@ -7,7 +7,7 @@ const InitialState = {
     isError: false
 }
 
-const reducer = (state = InitialState, { type, payload }) => {
+const reducer = (state = InitialState, { type , payload }) => {
     switch (type) {
         case GET_VIDEO_REQUEST:
             return { ...state, isLoading: true }

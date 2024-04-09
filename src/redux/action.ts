@@ -1,7 +1,8 @@
+import { Dispatch } from "redux";
 import { GET_VIDEO_REQUEST, GET_VIDEO_SUCCESS, GET_VIDEO_FAILURE } from "./actionType"
-import axios, { Axios } from "axios"
+import axios from "axios"
 
-export const getAllVideos = (page) => async (dispatch) => {
+export const getAllVideos = (page:number) => async (dispatch: Dispatch<any>) => {
     try {
         dispatch({ type: GET_VIDEO_REQUEST });
         const res = await axios.get(`https://internship-service.onrender.com/videos?page=${page}&limit=9`);
