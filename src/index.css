@@ -20,4 +20,30 @@
     display: none;
     scroll-behavior: smooth;
 }
- 
+
+
+
+.btn {
+    padding: 4px 10px;
+    border-radius: 20px;
+    font-size: 14px;
+}
+
+.btn:hover {
+    padding: 4px 10px;
+    background-color: rgb(56, 55, 55);
+    border-radius: 20px;
+    font-size: 14px;
+}
+
+.comment {
+    background-color: #333;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    border: 1px solid #555;
+}
+
+.comment:last-child {
+    margin-bottom: 0;
+}
