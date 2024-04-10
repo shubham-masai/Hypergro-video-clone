@@ -164,11 +164,7 @@ const Videoplayer: React.FC = () => {
             }
             </div>
             <span className="text-white ml-1 block">{dislikeCount}</span>
-          </div>
-
-
-
-          
+          </div>  
         </div>
 
         <div className="px-[1.5rem] mt-[0.4rem]">
@@ -227,7 +223,7 @@ const Videoplayer: React.FC = () => {
         </div>
       </div>
 
-      <div className="flex-1 m-auto h-[80vh] overflow-auto sidebar mt-0">
+      <div className="flex-1 m-auto h-screen overflow-auto sidebar mt-0">
         <div className="flex flex-col gap-4">
           {
             videos?.map((el: VideoCardprops) => {

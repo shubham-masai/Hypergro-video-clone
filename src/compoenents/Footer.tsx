@@ -7,7 +7,7 @@ const Footer: React.FC = () => {
     <div className="w-[100%] bg-black flex flex-col items-center mt-[20px]">
       <hr className="w-[95%] border-gray-400 my-4"/>
       <div className="w-[95%] text-white flex flex-col items-center gap-[10px] p-[1.2rem] md:flex-row md:justify-between" >
-        <p>
+        <p className="text-[0.9rem] md:text-[1.1rem]">
           Copyright Ⓒ 2024 hypergro. All Rights Reserved.
         </p>
         <div className='flex gap-[1rem]'>

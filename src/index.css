@@ -2,6 +2,20 @@
 @tailwind components;
 @tailwind utilities;
 
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+::-webkit-scrollbar-track {
+    background: black; 
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background: rgb(99, 102, 105);
+    border: none; 
+    border-radius: 10px;
+  }
+
 
 .gradient-background {
     background: linear-gradient(120deg, #c0c0c0 30%, #a0a0a0 38%, #a0a0a0 40%, #c0c0c0 48%);
@@ -64,4 +78,4 @@
       transform: scale(1);
    }
   }
-  
+ 
