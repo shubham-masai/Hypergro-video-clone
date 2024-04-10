@@ -2,8 +2,7 @@ import React, { useEffect, useState } from 'react'
 import { useParams } from 'react-router-dom';
 import VideoCard, { VideoCardprops } from "./VideoCard"
 
-import {
-  FaRegThumbsUp, FaThumbsUp, FaRegThumbsDown, FaThumbsDown} from "react-icons/fa";
+import { FaRegThumbsUp, FaThumbsUp, FaRegThumbsDown, FaThumbsDown} from "react-icons/fa";
 
 const Videoplayer: React.FC = () => {
   let { id } = useParams<{ id: string }>();
@@ -156,7 +155,7 @@ const Videoplayer: React.FC = () => {
           <div className="flex gap-1 items-center">
             <div>
               {
-                likeStatus ? < FaThumbsUp className="text-white" onClick={handleLike} /> : <FaRegThumbsUp className="text-white" onClick={handleLike} />
+                likeStatus ? < FaThumbsUp className="text-white zoom-animation" onClick={handleLike} /> : <FaRegThumbsUp className="text-white" onClick={handleLike} />
               }
             </div>
             <span className="text-white ml-1 block">{likeCount}</span>
@@ -166,6 +165,10 @@ const Videoplayer: React.FC = () => {
             </div>
             <span className="text-white ml-1 block">{dislikeCount}</span>
           </div>
+
+
+
+          
         </div>
 
         <div className="px-[1.5rem] mt-[0.4rem]">

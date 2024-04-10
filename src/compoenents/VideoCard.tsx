@@ -47,7 +47,6 @@ const VideoCard: React.FC<VideoCardprops> = ({ postId, creator, reaction, submis
     return (
         <div
             className=" cursor-pointer"
-
             onMouseEnter={startVideoPlayback}
             onMouseLeave={stopVideoPlayback}
         >
