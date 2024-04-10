@@ -6,10 +6,12 @@ export interface VideoCardprops {
         mediaUrl: string;
         title: string;
         thumbnail: string;
+        description: string
     };
     creator: {
         pic: string;
         name: string;
+        handle: string
     };
     reaction: {
         count: number;
@@ -92,4 +94,3 @@ const VideoCard: React.FC<VideoCardprops> = ({ postId, creator, reaction, submis
 }
 
 export default VideoCard
- 
