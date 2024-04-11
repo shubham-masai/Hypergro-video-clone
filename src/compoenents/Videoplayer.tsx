@@ -1,14 +1,15 @@
 import React, { useEffect, useState } from 'react'
 import { useParams } from 'react-router-dom';
 import VideoCard, { VideoCardprops } from "./VideoCard"
+import { toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+import { ToastContainer } from 'react-toastify';
 
 import { FaRegThumbsUp, FaThumbsUp, FaRegThumbsDown, FaThumbsDown} from "react-icons/fa";
-
 const Videoplayer: React.FC = () => {
   let { id } = useParams<{ id: string }>();
   
   const [currentVideo, setCurrentVideo] = useState<VideoCardprops | null>(null);
-
 
   const [likeStatus, setLikeStatus] = useState<boolean>(false);
   const [dislikeStatus, setDislikeStatus] = useState<boolean>(false);
@@ -91,6 +92,7 @@ const Videoplayer: React.FC = () => {
       setComments(updatedComments);
       localStorage.setItem(`comments_${id}`, JSON.stringify(updatedComments));
       setNewComment('');
+      toast.success("Comment added successfully!");
     }
   };
 
@@ -117,6 +119,7 @@ const Videoplayer: React.FC = () => {
     const updatedComments = comments.filter((_, i) => i !== index);
     setComments(updatedComments);
     localStorage.setItem(`comments_${id}`, JSON.stringify(updatedComments));
+    toast.success("Comment deleted successfully!");
   };
 
   const handleEditCancle = () => {
@@ -193,7 +196,7 @@ const Videoplayer: React.FC = () => {
 
           <div className="text-white">
             {comments.map((comment, index) => (
-              <div key={index} className="comment flex justify-between">
+              <div key={index} className="flex justify-between">
                 {index === editingCommentIndex ? (
                   <textarea
                     className="w-[85%] border-b h-8 text-white bg-transparent outline-none"
@@ -232,6 +235,7 @@ const Videoplayer: React.FC = () => {
           }
         </div>
       </div>
+      <ToastContainer  className="fixed top-0 left-1/2 transform -translate-x-1/2 w-[17rem] text-[0.9rem] md:w-[20rem]"  autoClose={800} />
     </div >
   )
 }
