@@ -53,8 +53,8 @@ To use Video Clone:
 
 ![Screenshot (2465)](https://github.com/shubham-masai/Hypergro-video-clone/assets/130532573/91c6fc26-aa71-475a-8ca7-7a9eb80abdf6)
 
-
 ![Screenshot (2466)](https://github.com/shubham-masai/Hypergro-video-clone/assets/130532573/61ec0337-07f1-40f1-b907-1f4e989f459c)
 
- ![Screenshot (2467)](https://github.com/shubham-masai/Hypergro-video-clone/assets/130532573/434e17b6-a009-48cb-aa18-c4a527bf5275)
+![Screenshot (2472)](https://github.com/shubham-masai/Hypergro-video-clone/assets/130532573/5a4d4d4c-20ba-4cd0-92bf-31dc337a3abd)
+
 
