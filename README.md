@@ -3,6 +3,8 @@
 ## Overview
 Video Clone is a platform where users can view videos, leave comments, edit their own comments, and delete their own comments.
 
+## Deployment
+Access the deployed version [Vercel](https://hypergro-video-clone.vercel.app/)
 ## Feature 
 1. **Video Playback:**
    - Users can play videos within the application.
