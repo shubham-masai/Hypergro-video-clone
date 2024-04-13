@@ -5,6 +5,7 @@ Video Clone is a platform where users can view videos, leave comments, edit thei
 
 ## Deployment
 Access the deployed version [Vercel](https://hypergro-video-clone.vercel.app/)
+
 ## Feature 
 1. **Video Playback:**
    - Users can play videos within the application.
@@ -24,6 +25,9 @@ Access the deployed version [Vercel](https://hypergro-video-clone.vercel.app/)
   
 ## Tech Stack
  React | Redux | Tailwind | TypeScript
+
+## Video Link
+[Drive](https://drive.google.com/file/d/1ESbJIo6ltPkELDjxT-FeSgWdWe8UcMdQ/view)
 
 ## Usage
 To use Video Clone:
